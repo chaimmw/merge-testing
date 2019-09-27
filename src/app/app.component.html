@@ -1,0 +1,45 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<div class="baseline">
+  <h3>{{myBehaviorSubject | async}}</h3>
+</div>
+
+<div>
+  <input [(ngModel)]="newNum" type="number">
+  <button (click)="setNewNumber(newNum)">Change Num</button>
+</div>
+
+<div>
+  <input [(ngModel)]="newNum2" type="number">
+  <button (click)="setNewNumber2(newNum2)">Change Num</button>
+</div>
+
+<div>
+  <input [(ngModel)]="newNum3" type="number">
+  <button (click)="setNewNumber3(newNum3)">Change Num</button>
+</div>
+
+<button (click)="toggleDisplay()">Display</button>
+<div>
+  <h3>merged2-{{mergedObs2$ | async}}</h3>
+</div>
+<div>
+  <h3>2-{{myBehaviorSubject2 | async}}</h3>
+</div>
+<div>
+  <h3>sumerged3b -{{mergedObs3$ | async}}</h3>
+</div>
+<div>
+  <h3>merged4 -{{mergedObs4$ | async}}</h3>
+</div>
+
+<div>
+  <h3>merged--{{mergedObs$ | async}}</h3>
+</div>
+
+<div>
+  <h3>merged--{{mergedObs$ | async}}</h3>
+</div>
