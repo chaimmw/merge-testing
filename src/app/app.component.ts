@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   mergedObs4$: Observable<number>;
 
   mySubject = new Subject<number>();
-  myBehaviorSubject = interval(3000);
+  myBehaviorSubject = interval(10000);
   myBehaviorSubject2 = new BehaviorSubject<number>(0);
 
   ngOnInit() {
@@ -41,9 +41,9 @@ export class AppComponent implements OnInit {
     );
   }
 
-  setNewNumber(num: number) {
-    this.myBehaviorSubject.next(num);
-  }
+  // setNewNumber(num: number) {
+  //   this.myBehaviorSubject.next(num);
+  // }
 
   setNewNumber2(num: number) {
     this.myBehaviorSubject2.next(num);
